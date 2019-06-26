@@ -5,7 +5,7 @@ This paper is submitted to EMNLP-2019 and under review.
 The Code is organized by six NLP tasks. They are Name Entity Recognition(NER), POS tagging, Word Sense Disambiguation (WSD), Coreference Resolution, Constituency parsing and sentiment analysis, respectively.
 # Contents
 ## Environmet
-Tensorflow 1.2+ python 3.5
+Tensorflow 1.2+ torch 0.4+ python 3.5
 
 ## Name Entity Recognition 
 Dataset: The CoNLL 2003[1]
