@@ -1,0 +1,307 @@
+
+
+
+======================================
+
+[ ARBITRAGE/NN ]
+:/: Technically/RB ,/, 
+[ the/DT simultaneous/JJ ]
+buying/NN and/CC selling/NN of/IN 
+[ related/VBN securities/NNS ]
+to/TO take/VB 
+[ advantage/NN ]
+of/IN 
+[ small/JJ differences/NNS ]
+in/IN 
+[ price/NN ]
+./. 
+
+[ The/DT term/NN ]
+has/VBZ come/VBN to/TO be/VB applied/VBN to/TO 
+[ buying/VBG stocks/NNS ]
+in/IN 
+[ companies/NNS ]
+
+[ that/WDT ]
+are/VBP ,/, or/CC are/VBP rumored/VBN to/TO be/VB ,/, 
+[ takeover/NN targets/NNS ]
+./. 
+
+======================================
+
+[ INDEX/NN ARBITRAGE/NN ]
+:/: 
+[ The/DT simultaneous/JJ ]
+trading/NN in/IN 
+[ stock-index/JJ markets/NNS ]
+and/CC 
+[ the/DT underlying/VBG groups/NNS ]
+of/IN 
+[ stocks/NNS ]
+to/TO take/VB 
+[ advantage/NN ]
+of/IN 
+[ temporary/JJ discrepancies/NNS ]
+in/IN 
+[ prices/NNS ]
+./. 
+
+======================================
+
+[ JUNK/NN BONDS/NNS ]
+:/: 
+[ High-yielding/JJ ]
+,/, 
+[ high-risk/JJ debt/NN securities/NNS ]
+rated/VBN 
+[ double-B/JJ ]
+or/CC 
+[ lower/JJR ]
+by/IN 
+[ the/DT credit-rating/JJ agencies/NNS ]
+./. 
+
+======================================
+
+[ LEVERAGED/VBN BUY-OUT/NN ]
+:/: 
+[ The/DT purchase/NN ]
+of/IN 
+[ a/DT company/NN ]
+by/IN 
+[ a/DT small/JJ group/NN ]
+of/IN 
+[ investors/NNS ]
+financed/VBN largely/RB by/IN 
+[ debt/NN ]
+,/, often/RB 
+[ junk/NN bonds/NNS ]
+./. 
+
+======================================
+
+[ MARGIN/NN CALL/NN ]
+:/: 
+[ A/DT demand/NN ]
+upon/IN 
+[ an/DT investor/NN ]
+to/TO put/VB up/RP 
+[ more/JJR collateral/NN ]
+for/IN 
+[ securities/NNS ]
+bought/VBN on/IN 
+[ credit/NN ]
+./. 
+
+[ The/DT lender/NN ]
+,/, usually/RB 
+[ a/DT bank/NN ]
+or/CC 
+[ brokerage/NN firm/NN ]
+,/, makes/VBZ 
+[ the/DT call/NN ]
+when/WRB 
+[ the/DT equity/NN ]
+in/IN 
+[ the/DT investor/NN 's/POS account/NN ]
+falls/VBZ below/IN 
+[ a/DT standard/NN set/VBN ]
+by/IN 
+[ a/DT stock/NN exchange/NN ]
+or/CC 
+[ firm/NN ]
+./. 
+
+======================================
+
+[ OPTIONS/NNS ] 
+:/: 
+[ A/DT ]
+``/`` put/VBN ''/'' 
+[ option/NN ]
+permits/VBZ 
+[ a/DT holder/NN ]
+to/TO sell/VB 
+[ a/DT stock/NN ]
+at/IN 
+[ a/DT specified/VBN price/NN ]
+within/IN 
+[ a/DT limited/VBN period/NN ]
+./. 
+
+[ A/DT ]
+``/`` 
+[ call/NN ]
+''/'' 
+[ option/NN ]
+permits/VBZ 
+[ an/DT investor/NN ]
+to/TO buy/VB 
+[ stock/NN ]
+at/IN 
+[ a/DT specified/VBN price/NN ]
+within/IN 
+[ a/DT limited/VBN period/NN ]
+./. 
+
+[ An/DT index/NN option/NN ]
+lets/VBZ 
+[ the/DT investor/NN ]
+buy/VB or/CC sell/VB 
+[ the/DT ]
+``/`` 
+[ basket/NN ]
+''/'' of/IN 
+[ stocks/NNS ]
+represented/VBN by/IN 
+[ a/DT stock-market/NN index/NN ]
+./. 
+
+======================================
+
+[ PORTFOLIO/NN INSURANCE/NN ]
+:/: 
+[ A/DT method/NN ]
+of/IN hedging/VBG 
+[ a/DT stock/NN portfolio/NN ]
+,/, usually/RB by/IN selling/VBG 
+[ futures/NNS contracts/NNS ]
+on/IN 
+[ stock/NN indexes/NNS ]
+when/WRB 
+[ the/DT market/NN ]
+falls/VBZ ./. 
+
+======================================
+
+[ STOCK-INDEX/NN FUTURES/NNS ]
+:/: 
+[ Contracts/NNS ]
+for/IN 
+[ future/JJ delivery/NN ]
+of/IN 
+[ an/DT amount/NN ]
+of/IN 
+[ cash/NN ]
+based/VBN on/IN 
+[ an/DT index/NN ]
+of/IN 
+[ stock/NN prices/NNS ]
+,/, such/JJ as/IN 
+[ the/DT Standard/NNP ]
+&/CC 
+[ Poor/NNP 's/POS 500/CD index/NN ]
+or/CC 
+[ the/DT Major/NNP Market/NNP Index/NNP ]
+./. 
+
+[ A/DT trader/NN ]
+buying/VBG 
+[ a/DT December/NNP S&P/NNP 500/CD stock-index/JJ futures/NNS contract/NN ]
+at/IN 
+[ a/DT price/NN ]
+of/IN 
+[ $/$ 200/CD today/NN ]
+,/, for/IN 
+[ instance/NN ]
+,/, would/MD be/VB agreeing/VBG to/TO take/VB 
+[ delivery/NN next/JJ month/NN ]
+of/IN 
+[ 500/CD times/NNS ]
+
+[ that/WDT ]
+amount/VBP in/IN 
+[ cash/NN ]
+,/, or/CC 
+[ $/$ 100,000/CD ]
+./. 
+
+[ Traders/NNS ]
+would/MD almost/RB always/RB close/VB out/RP 
+[ that/DT position/NN ]
+by/IN selling/VBG 
+[ an/DT offsetting/VBG futures/NNS ]
+contract/NN ./. 
+
+======================================
+
+If/IN 
+[ the/DT stock/NN market/NN ]
+--/: and/CC correspondingly/RB 
+[ the/DT stock/NN index/NN ]
+--/: rose/VBD before/IN 
+[ the/DT trader/NN ]
+closed/VBD out/RP 
+[ his/PRP$ position/NN ]
+,/, 
+[ he/PRP ]
+would/MD make/VB 
+[ a/DT profit/NN ]
+because/IN 
+[ he/PRP ]
+could/MD sell/VB 
+[ an/DT offsetting/VBG contract/NN ]
+at/IN 
+[ a/DT higher/JJR price/NN ]
+,/, taking/VBG in/IN 
+[ more/JJR money/NN ]
+than/IN 
+[ he/PRP ]
+had/VBD to/TO spend/VB ./. 
+
+If/IN 
+[ the/DT market/NN ]
+fell/VBD ,/, 
+[ the/DT trader/NN ]
+would/MD lose/VB 
+[ money/NN ]
+because/IN 
+[ he/PRP ]
+would/MD have/VB to/TO sell/VB 
+[ an/DT offsetting/VBG contract/NN ]
+at/IN 
+[ a/DT lower/JJR price/NN ]
+./. 
+
+[ Futures/NNS ]
+are/VBP used/VBN to/TO hedge/VB against/IN 
+[ fluctuations/NNS ]
+in/IN 
+[ stock/NN prices/NNS ]
+or/CC to/TO speculate/VB on/IN 
+[ market/NN moves/NNS ]
+./. 
+
+======================================
+
+ (/( 
+[ The/DT Major/NNP Market/NNP Index/NNP ]
+encompasses/VBZ 
+[ 20/CD blue-chip/JJ stocks/NNS ]
+,/, including/VBG 
+[ 17/CD ]
+
+[ that/WDT ]
+are/VBP also/RB in/IN 
+[ the/DT Dow/NNP Jones/NNP Industrial/NNP Average/NNP ]
+./. 
+
+[ Futures/NNS ]
+on/IN 
+[ the/DT MMI/NNP ]
+are/VBP traded/VBN on/IN 
+[ the/DT Chicago/NNP Board/NNP ]
+of/IN 
+[ Trade/NNP ]
+./. 
+
+[ Options/NNS ]
+on/IN 
+[ the/DT index/NN ]
+are/VBP traded/VBN on/IN 
+[ the/DT American/JJ Stock/NNP Exchange/NNP ]
+./. 
+
+)/) 
+======================================
+

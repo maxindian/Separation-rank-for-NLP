@@ -1,0 +1,47 @@
+
+
+
+======================================
+
+[ TRADING/NN VOLUME/NN ]
+in/IN 
+[ Standard/NNP ]
+&/CC 
+[ Poor/NNP 's/POS 500/CD stock-index/NN futures/NNS contracts/NNS ]
+on/IN 
+[ the/DT Chicago/NNP Mercantile/NNP Exchange/NNP Monday/NNP ]
+totaled/VBD 
+[ 73,803/CD contracts/NNS ]
+./. 
+
+[ Yesterday/NN 's/POS edition/NN ]
+incorrectly/RB reported/VBD 
+[ Monday/NNP 's/POS trading/NN volume/NN ]
+as/IN 
+[ a/DT record/NN ]
+for/IN 
+[ the/DT S&P/NNP 500/CD contract/NN ]
+./. 
+
+======================================
+
+ (/( See/VB :/: ``/`` After/IN 
+[ the/DT Fall/NN ]
+:/: 
+[ Stock-Index/NN Futures/NNS Provide/VBP ]
+
+[ a/DT Windfall/NN ]
+for/IN 
+[ Some/DT Traders/NNS ]
+--/: 
+[ Chicago/NNP Merc/NNP 's/POS Trading/NN Pit/NN Gets/VBZ Liquidity/NN Infusion/NN ]
+After/IN 
+[ a/DT Two-Year/JJ Wait/NN ]
+''/'' --/: 
+[ WSJ/NNP Oct./NNP 17/CD ]
+,/, 
+[ 1989/CD ]
+
+)/) 
+======================================
+

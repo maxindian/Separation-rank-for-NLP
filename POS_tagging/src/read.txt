@@ -1,0 +1,7 @@
+train250: 4 eproch L1
+train250_1 6eproch  L1
+train250_2 6eproch L2
+
+result_300_1 : 上面是6-L2 下面是6-L1
+
+ 

@@ -1,0 +1,1258 @@
+This file contains a fairly specific description of changes to WSJ corpus
+POS-tagged files between versions 0.75 and 1.0 - i.e., changes after the
+predicate-argument round of annotation.  The types of changes are discussed
+in general in README.pos.
+
+Most changes are corrections in tokenization, reflecting similar changes in
+the corresponding skeletal-parse version of the file (wsj_????.prd).
+
+A few changes are also POS tag corrections, from when somebody happened to
+notice an error in the POS tagging while doing something else.  However,
+there has been no thorough revision of the POS tag information found here
+since mid-1990, when the files were originally tagged.
+
+RWM, December, 1994
+
+------------------------------00--------------------------------
+
+03 - removed extraneous whitespace (tabs) at end of file
+
+13 - split: [ Conn./NNP PS/NNP ]
+	=>
+	[ Conn/NNP ]
+	./.
+
+	[ PS/NNP ]
+     split: attention.../: => attention/NN .../:
+
+15 - split: pool.../: => pool/NN .../:
+
+18 - corrected tag: about/IN => about/RB
+     corrected tag: out/IN => out/RP
+     corrected mess: Cray*/NNP-3/CD => Cray-3/NNP
+
+21 - restored: third*/JJS => third-highest/JJS
+
+36 - corrected tag: up/RP => up/RB
+
+37 - retokenized: ./. x 3 => .../:
+
+41 - restored HUGE missing section of text at end (546 words, about 1/3)
+     In that section, joined: [ Mr/NNP ] ./. => [ Mr./NNP ]
+
+44 - split (twice): ..../. => .../: ./.
+
+49 - split: accountants.../: => accountants/NNS .../:
+
+62 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+71 - removed xtra: '82/CD '82/CD => '82/CD
+     removed xtra: '86/CD '86/CD => '86/CD
+
+75 - split: act.../: => act/VB .../:
+
+83 - split: small.../: => small/JJ .../:
+
+87 - removed fragmentary text, from:
+	Yes/UH /)
+	[ I/PRP ]
+	want/VBP to/TO become/VB
+	[ a/DT Foster/NNP Corporate/NNP Parent/NNP ]
+     to end.
+
+87 - split/reordered: F.S.L.I.C/NNP ''./NN =>  F.S.L.I.C./NNP ''/''
+
+94 - split: people.../: => people/NNS .../:
+
+97 - split: here.../: => here/RB .../:
+
+------------------------------01--------------------------------
+
+03 - corrected tag: that/WDT => that/DT
+
+05 - corrected tag: out/IN => out/RP
+     corrected tag: up/IN => up/RP
+     joined: M.D/NNP ] ./. => M.D./NNP (three times)
+
+07 - corrected tag: called/VBD => called/VBN
+     corrected tag: over/IN => over/RP
+
+08 - corrected tag: in/IN => in/RP (twice)
+     corrected tag: up/IN => up/RP
+     split: have.../: => have/VBD .../:
+
+10 - join/restore:
+	[ 8/CD 7/CD ]
+
+	[ /SYM 16/CD %/NN one/CD year/NN ]
+	=>
+	[ 8/CD 7\/16/CD %/NN one/CD year/NN ]
+
+12 - retokenized: ./. x 4 => .../: ./. (twice)
+
+14 - split/reordered: [ L.A/NNP ''./SYM ] => [ L.A./NNP ''/'' ]
+
+16 - joined: Corp/NNP ] ./. => Corp./NNP ]
+
+20 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+59 - joined: Dunkin/NNP ] '/'' => Dunkin'/NNP (four times)
+
+66 - removed fragmentary text (former portion of misformatted headline):
+	Says/VBZ
+	[ Ne/NNP ]
+
+------------------------------02--------------------------------
+
+67 - split: association.../: => association/NN .../:
+     split: commission.../: => commission/NN .../:
+     retokenized: ./. x 4 => .../: ./.
+
+80 - retokenized: ./. x 4 => .../: ./.
+
+82 - removed xtra: Tong'Il/NNP Tong'Il/NNP => Tong'Il/NNP
+
+83 - retokenized: ./. x 3 => .../:
+     (doesn't make a lot of sense with this ". '' ...", but it's as good as
+      we can do, given the input text.)
+
+90 - joined: pro/JJ -/: => pro-/JJ
+     split: resulted.../: => resulted/VBD .../:
+
+93 - retagged: '/'' => '/POS
+     split: Ind.-investment/NN => Ind./NNP -/: investment/NN
+     split: owner-bred/JJ => owner/NN -/: bred/VBD
+     retokenized: ./. x 4 => .../: ./. (twice)
+
+95 - retokenized: ./. x 4 => .../: ./.
+
+96 - retokenized: ./. x 4 => .../: ./. (four times)
+
+97 - removed tag from []: [ Scientists/NNS ]*/VBP => [ Scientists/NNS ]
+     corrected tag: caution/VB => caution/VBP
+
+------------------------------03--------------------------------
+
+09 - split: fearlast/NN => fear/NN last/JJ
+
+17 - split: U.S.concerns/NNS => U.S./NNP concerns/NNS
+
+31 - split: estate.../: => estate/NN .../:
+     split: discount.../: => discount/NN .../:
+     retokenized(automatically, possibly several): ./. x 3 => .../:
+
+35 - fixed mess: S*/NN&L/NNP => S&L/NN
+
+59 - joined, fixed slash:
+	[ Stovall/NNP ]
+
+	[ //NN Twenty-First/NNP Securities/NNP ]
+	=>
+	[ Stovall\/Twenty-First/NNP Securities/NNP ]
+
+62 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+81 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+84 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+------------------------------04--------------------------------
+
+00 - fixed slash mess:
+	[ 100/CD 16/CD ]
+
+	[ //NN 32/CD ]
+	=>
+	[ 100/CD 16\/32/CD ]
+
+05 - corrected tag: noted/VBN => noted/VBD
+     removed extra tag (from split-contractions): n't/RB/NNP => n't/RB
+     corrected tag: like/IN => like/VB
+     corrected tag: a/VB => a/DT
+
+08 - joined/fixed quote: `/`` [ n/CC ] '/'' => [ 'n'/CC ]
+
+13 - retokenized: [ somethin/NN ] '/'' => [ somethin'/NN ]
+     retokenized: ./. x 3 => .../:
+     joined: Corp/NNP ] ./. => Corp./NNP ]
+
+14 - retokenized: ./. x 4 => .../: ./.
+
+16 - retokenized: ./. x 4 => .../: ./.
+
+30 - split/reordered: ''./NN => ./. ''/''
+     changed tag: Shake/VB => Shake/NNP
+     removed xtra: [ 'Em/NNP 'Em/NNP ] => [ 'Em/NNP ]
+     changed tag: Down/IN => Down/NNP
+
+35 - split: realign.../: => realign/VB .../:
+
+39 - retokenized: ./. x 4 => .../: ./.
+
+40 - split: a-Monthly/JJ => a/SYM -/: Monthly/JJ
+
+43 - joined: [ A/NNP ] [ 's/POS ] => [ A's/NNP ] (as in Oakland baseball)
+     joined: [ A/NNP ] [ 's/NNP ] => [ A's/NNP ]
+
+45 - split: innovators.../: => innovators/NNS .../:
+
+51 - split: [ the/DT oil/NN filler/NN cap./NN Mazda/NNP ]
+	=> 
+	[ the/DT oil/NN filler/NN cap/NN ]
+	./.
+
+	[ Mazda/NNP ]
+
+53 - split: exposure.../: => exposure/NN .../:
+     split: it.../: => it/PRP .../:
+     split: transparent.../: => transparent/JJ .../:
+     split: earthquake.../: => earthquake/NN .../:
+     retokenized: ./. x 4 => .../: ./.
+
+57 - split: Corp.:8.50/NNP => Corp./NNP :/: 8.50/CD
+     retagged: %/VB => %/NN
+     split: 1,000:8.55/CD => 1,000/CD :/: 8.55/CD
+     joined: CORP/NNP ] ./. => CORP./NNP ]
+     split: [ 30/CD days./NNS 9.86/CD %/NN ]
+	=>
+	[ 30/CD days/NNS ]
+	./.
+
+	[ 9.86/CD %/NN ]
+     split:
+	 )/)
+	[ .9.76/CD %/NN ]
+	=>
+	 )/) ./.
+
+	[ 9.76/CD %/NN ]
+
+59 - split: a-Discounted/VBN => a/SYM -/: Discounted/VBN
+     split: b-Week/NN => b/SYM -/: Week/NN
+     split: c-Yields/NNS => c/SYM -/: Yields/NNS
+
+63 - joined: G.m.b/NNP ] ./. [ H./NNP => G.m.b.H./NNP ] [
+
+65 - corrected tag: had/VBD => had/VBN
+
+66 - split: effort.../: => effort/NN .../:
+
+72 - restored: 1\/JJ => 1\/2-year/JJ
+
+80 - restored: 1\/JJ => 1\/2-inch/JJ
+
+------------------------------05--------------------------------
+
+06 - split: [ Minuteman/NNP missile/NN rocket/NN motors./NNS contract/NN ]
+	=>
+	[ Minuteman/NNP missile/NN rocket/NN motors/NNS ]
+	./.
+
+	[ contract/NN ]
+     restored text missing in our raw text (found in TIPSTER version)
+	[ contract/NN ]
+	=>
+	[ Rockwell/NNP International/NNP Corp./NNP ]
+	received/VBD
+	[ a/DT $/$ 26.7/CD million/CD Navy/NNP contract/NN ]
+
+
+26 - split: animosity.../: => animosity/NN .../:
+     split: people.../: => people/NNS .../:
+
+32 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+33 - split: C415/CD => C/$ 415/CD
+
+50 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+54 - split: top.../: => top/NN .../:
+
+61 - modernized tag: 'em/PP (0.5 version: of'em/IN|PP) => 'em/PRP
+     joined: [ U.S/NNP ] ./. => [ U.S./NNP ]
+
+64 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+65 - restored: 3/CD 1\/JJ => 3/CD 1\/2-year/JJ
+
+76 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+95 - retokenized: ./. x 4 => .../: ./.
+
+------------------------------06--------------------------------
+
+02 - split: [ 30/CD days./NN 9.80/CD %/NN ]
+	=>
+	[ 30/CD days/NN ]
+	./.
+
+	[ 9.80/CD %/NN ]
+
+09 - split: [ or.../: ] => [ or/CC .../: ]
+     retokenized: ./. x 4 => .../: ./.
+
+17 - split: acts.../: => acts/NNS .../:
+
+33 - joined: cont/VBN 'd./NN => cont'd./VBN
+     split: ,.../: => ,/, .../:
+     retokenized(automatically, possibly several): ./. x 3 => .../:
+
+34 - split: something.../: => something/NN .../:
+
+55 - split: Sandinistas.../: => Sandinistas/NNS .../:
+
+60 - joined: S.p/NNP ] ./. [ A./NNP ] => S.p.A./NNP ]
+
+80 - split: a-Ex-dividend/NN => a/SYM -/: Ex-dividend/
+	b-As/IN => b/SYM -/: As/IN
+	c-Translated/VBN => c/SYM -/: Translated/VBN
+	e-In/IN => e/SYM -/: In/IN
+	f-As/IN => f/SYM -/: As/IN
+	z-Not/RB => z/SYM -/: Not/RB
+
+89 - restored: 1\/JJ => 1\/2-year/JJ
+
+94 - retokenized: ./. x 4 => .../: ./.
+
+------------------------------07--------------------------------
+
+30 - split: ..../. => .../: ./.
+
+69 - split: ..../. => .../: ./.
+
+80 - split: should.../: => should/MD .../:
+
+81 - correct tag (misspelled "it's"): 's/VBZ => 's/POS
+
+------------------------------08--------------------------------
+
+01 - split: WHO'S/JJ => WHO/WP 'S/VBZ
+
+04 - restored: 1\/JJ => 1\/2-foot-tall/JJ
+
+10 - joined: [ Cie/NNP ] ./. => [ Cie./NNP ]
+     split: [ Cie./NNP Mr./NNP ]
+	=>
+	[ Cie/NNP ]
+	./.
+
+	[ Mr./NNP ]
+     corrected tag: de/IN or de/FW => de/NNP (in accordance w/late MAM tagging)
+	(but left FW's alone when amidst other FW's)
+
+17 - joined: [ N.H/NNP ] ./. => [ N.H./NNP ]
+
+20 - reversed quote:  ``/`` => ''/''
+
+87 - removed fragmentary text, from:
+	[ home./NN contribution/NN ]
+	./.
+     to end.
+
+------------------------------09--------------------------------
+
+09 - split/fixed quote/retagged:
+	says/VBZ ,/,
+	[ 'I've/NN|VBP ]
+	=>
+	says/VBZ ,/, `/``
+	[ I/PRP 've/VBP ]
+
+11 - join/restore:
+	[ murder/NN mystery/NN ]
+
+	[ /SYM comedy/NN ]
+	=>
+	[ murder/NN mystery\/comedy/NN ]
+
+17 - joined: G.m.b/NNP ] ./. [ H./NNP ] => G.m.b.H./NNP ]
+
+22 - retokenized: ./. x 4 => .../: ./.
+
+35 - split: management.../: => management/NN .../:
+
+37 - split: success.../: => success/NN .../:
+     fixed quote: ``/`` => ''/''
+     corrected tag: out/IN => out/RP
+
+44 - split: ,.../: => ,/, .../:
+     split: express.../: => express/VB .../:
+     split: alone.../: => alone/RB .../:
+     split: is.../: => is/VBZ .../:
+     split: egotist.../: => egotist/NN .../:
+     retokenized: ./. x 4 => .../: ./.
+
+61 - joined: [ N.C/NNP ] ./. => [ N.C./NNP ]
+     joined: [ Ind/NNP ] ./. => [ Ind./NNP ]
+
+66 - removed xtra: [ used'em/NN used'em/NN ] => [ used'em/NN ]
+     split: [ used'em/NN ] => [ used/VBD 'em/PRP ]
+
+70 - split: sales.../: => sales/NNS .../:
+
+82 - retagged: 's/VBZ reported/VBN => 's/POS reported/VBD
+
+84 - split: dollars.../: => dollars/NNS .../:
+     split: design.../: => design/NN .../:
+     split: orchard.../: => orchard/NN .../:
+     split/retagged: '/POS.../: => '/'' .../:
+     retokenized: ./. x 4 => .../: ./.
+     split: '/''.../: => '/'' .../:
+     split: garden.../: => garden/NN .../:
+     split: of.../: => of/IN .../:
+     retagged: '/POS => '/''
+     split: insure.../: => insure/VBP .../:
+     retokenized: ./. x 3 => .../:
+     retagged: '/POS => '/''
+     retokenized: ./. x 4 => .../: ./.
+
+86 - fixed slash mess:
+	[ 8/CD 5/CD ]
+
+	[ //NN 16/CD %/NN five/CD months/NNS ]
+	=>
+	[ 8/CD 5\/16/CD %/NN five/CD months/NNS ]
+     split:
+	days./NNS
+	=>
+	[ 30/CD days/NNS ]
+	./.
+
+	[ 9.75/CD %/NN ]
+
+87 - split: committee.../: => committee/NN .../:
+
+89 - retokenized: ./. x 4 => .../: ./.
+
+90 - retagged: pending/VBG => pending/JJ
+     retagged: pending/VBG => pending/IN
+     retokenized: ./. x 4 => .../: ./.
+
+94 - retagged: dreams/NNS => dreams/VBZ
+     joined/fixed quote: `/`` [ n/NN ] '/'' => [ 'n'/CC ]
+     joined/fixed quote: `/`` [ 90s/CD ] => [ '90s/NNS ]
+
+96 - retokenized: ./. x 4 => .../: ./.
+
+98 - removed xtra/split/fixed tagging/etc:
+	build'em/VBP|PP
+	[ build'em/VBP|PP right/NN ]
+	=>
+	build/VBP
+	[ 'em/PRP ]
+	right/RB
+
+99 - split: conditioning.../: => conditioning/NN .../:
+     retokenized: ./. x 4 => .../: ./.
+
+------------------------------10--------------------------------
+
+17 - modernized tags in section added for 0.75 version (oops):
+	Appropriations/NP Committee/NP => Appropriations/NNPS Committee/NNP
+	[ House/NP Banking/NP Chairman/NP Henry/NP Gonzalez/NP ]
+	=> [ House/NNP Banking/NNP Chairman/NNP Henry/NNP Gonzalez/NNP ]
+	[ D./NP ] => [ D./NNP ]
+	[ Texas/NP ] => [ Texas/NNP ]
+	FHA/NP => FHA/NNP
+
+22 - restored: 1\/JJ => 1\/2-year/JJ
+
+44 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+57 - corrected tag: close/NN => close/RB
+     corrected tag: close/RB => close/VB
+     retokenized(automatically, possibly several): ./. x 3 => .../:
+
+58 - removed fragmentary text, from
+	to/TO choose/VB ./.
+     to end
+
+65 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+99 - restored: 1\/JJ => 1\/2-year/JJ
+     retokenized(automatically, possibly several): ./. x 3 => .../:
+
+------------------------------11--------------------------------
+
+22 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+23 - split: golfers.../: => golfers/NNS .../:
+     split: issues.../: => issues/NNS .../:
+
+36 - fixed mess: P*/NNP&G/NN => P&G/NNP
+
+38 - split: Office./NNP ]
+	=>
+	Office/NNP ]
+	./.
+
+39 - split: a-Totals/LS|NNS => a/SYM -/: Totals/NNS
+	c-Domestic/LS|JJ => c/SYM -/: Domestic/JJ
+	d-Percent/LS|NN => d/SYM -/: Percent/NN
+	x-There/LS|EX => x/SYM -/: There/EX
+
+45 - split: position.../: => position/NN .../:
+
+49 - corrected tag: Princeton\/Newport/NN => Princeton\/Newport/NNP
+     restored: Princeton\/NNP => Princeton\/Newport/NNP
+
+54 - split: [ deals.../: ] => [ deals/NNS .../: ]
+     retokenized(automatically, possibly several): ./. x 3 => .../:
+
+56 - removed fragmentary text
+	[ CO/NNP BBC/NNP CG/NNP TELV/NNP WGP/NNP +/SYM ]
+
+71 - it'controlled/PRP|JJ => it/PRP `/`` controlled/JJ
+
+84 - modernized tag: then-Air/JJ|NP => then-Air/JJ|NNP
+
+93 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+95 - split: [ purpose.../: ] => [ purpose/NN .../: ]
+
+------------------------------12--------------------------------
+
+18 - retokenized(automatically, possibly several): ./. x 3 => .../:
+     corrected tagging: on/IN and/CC off/IN => on/RP and/CC off/RP
+
+22 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+37 - join/restore:
+	[ Bard/NNP ]
+
+	[ /SYM EMS/NNP ]
+	=>
+	[ Bard\/EMS/NNP ]
+
+49 - split [ yet/RB .../: ] => [ yet.../: ]
+     retokenized(automatically, possibly several): ./. x 3 => .../:
+
+50 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+69 - corrected tags: foam/VB cushioning/VBG => foam/NN cushioning/NN
+
+70 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+71 - corrected tag: work/VB => work/NN
+
+73 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+------------------------------13--------------------------------
+
+02 - corrected tag: dominated/VBN => dominated/VBD
+
+14 - quote direction fix: ``/`` => ''/''
+
+27 - removed xtra: J'ai/FW J'ai/FW => J'ai/FW
+
+29 - retokenized:
+	[ Robert/NNP Bosch/NNP G.m.b/NNP ]
+	./.
+
+	[ H./NNP ]
+	=>
+	[ Robert/NNP Bosch/NNP G.m.b.H./NNP ]
+
+31 - reversed/joined quote: `/`` S/POS => 'S/POS
+
+37 - removed fragmentary text, from:
+	[ Last/JJ week/NN ]
+	's/POS best/RBS and/CC
+     to end.
+
+
+39 - split: market:8.60/NN|CD => market/NN :/: 8.60/CD
+     split: [ 30/CD days./NNS 9.86/CD %/NN ]
+	=>
+	[ 30/CD days/NNS ]
+	./.
+
+	[ 9.86/CD %/NN ]
+
+42 - split: a-Discounted/LS|JJ => a/SYM -/: Discounted/JJ
+	b-Week/LS|NN => b/SYM -/: Week/NN
+	c-Yields/LS|NNS => c/SYM -/: Yields/NNS
+
+49 - split: [ D.,Calif./NN ] => [ D./NNP ,/, Calif./NNP ]
+
+64 - split: AIR'S/NNP => AIR/NNP 'S/POS
+
+66 - fixed mess: S*/NN&L/JJ => S&L/NN
+
+67 - split: [ the/DT U.S.S.R./NNP Ms./NNP Volokh/NNP ]
+	=>
+	[ the/DT U.S.S.R/NNP ]
+	./.
+
+	[ Ms./NNP Volokh/NNP ]
+
+68 - retokenized:
+	[ Montedison/NNP S.p/NNP ]
+	./.
+
+	[ A./NNP ].
+	=>
+	[ Montedison/NNP S.p.A./NNP ]
+
+71 - retokenized:
+	[ Nuovo/NNP Banco/NNP Ambrosiano/NNP S.p/NNP ]
+	./.
+
+	[ A./NNP ]
+	=>
+	[ Nuovo/NNP Banco/NNP Ambrosiano/NNP S.p.A./NNP ]
+     retokenized:
+	[ Italy/NNP 's/POS Assicurazioni/NNP Generali/NNP S.p/NNP ]
+	./.
+
+	[ A/NNP ]
+	./.
+	=>
+	[ Italy/NNP 's/POS Assicurazioni/NNP Generali/NNP S.p.A/NNP ]
+	./.
+     retokenized:
+	[ the/DT Fiat/NNP S.p/NNP ]
+	./.
+
+	[ A.-controlled/JJ investment/NN concern/NN ]
+	=>
+	[ the/DT Fiat/NNP S.p.A.-controlled/JJ investment/NN concern/NN ]
+     retokenized:
+	[ Gemina/NNP S.p/NNP ]
+	./.
+
+	[ A./NNP ]
+	=>
+	[ Gemina/NNP S.p.A./NNP ]
+
+73 - corrected tag: 's/VBZ => 's/POS
+     split: JAPAN'S/NNP => JAPAN/NNP 'S/POS
+
+75 - corrected tag: 's/VBZ => 's/POS
+
+76 - removed xtra: [ ``/`` I/PRP ``/`` I/PRP ] => [ ``/`` I/PRP ]
+     reversed quote: ``/`` => ''/''
+     retokenized:
+	Rock'n/NNP ]
+	'/''
+	=>
+	Rock/NNP ]
+	'n'/CC
+
+86 - split: president-engineering/NN|NN => president/NN -/: engineering/NN
+
+87 - corrected tag: 's/POS => 's/VBZ
+
+90 - split: I.../: => I/PRP .../:
+
+97 - split: ``.../: => ``/`` .../:
+     retagged: shout/VBP ,/, scream/VB ,/,  pontificate/VB
+	=>
+	shout/VBP ,/, scream/VBP ,/,  pontificate/VBP
+
+------------------------------14--------------------------------
+
+13 - split: ability.../: => ability/NN .../:
+
+22 - split: FFr27.68/NN billion-a/JJ => FFr/SYM 27.68/CD billion/CD -/: a/DT
+
+42 - retokenized ./. x 4 => .../: ./.
+
+52 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+53 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+67 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+86 - split:
+	a-Ex-dividend/NN => a/SYM -/: Ex-dividend/NN
+	b-As/NNS => b/SYM -/: As/IN
+	c-Translated/VBN => c/SYM -/: Translated/VBN
+	e-In/IN => e/SYM -/: In/IN
+	f-As/NNS => f/SYM -/: As/IN
+
+93 - split: WHO'S/WP => WHO/WP 'S/VBZ
+     retokenized(automatically, possibly several): ./. x 3 => .../:
+
+------------------------------15--------------------------------
+
+16 - split: margins.../: => margins/NNS .../:
+     removed tag from bracket: [ the/DT ]*/NN => [ the/DT ]
+     corrected tag: easing/VBG => easing/NN
+
+29 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+45 - restored: 1\/JJ => 1\/2-year/JJ
+
+64 - split: [ the/DT long-term/JJ past./NN income/NN ]
+	=>
+	[ the/DT long-term/JJ past/NN ]
+	./.
+
+	[ income/NN ]
+     removed fragmentary text:
+	[ income/NN ]
+	./.
+
+83 - retokenized(automatically, possibly several): ./. x 3 => .../:
+     split: ISN'T/VBZ => IS/VBZ N'T/RB
+
+88 - joined: [ Calif/NNP ] ./. => [ Calif./NNP ]
+
+------------------------------16--------------------------------
+
+06 - split: citya/NN => city/NN a/DT
+
+17 - split: know'til/VB => know/VB 'til/RB
+     removed strays:
+	wind/VB { up/RP => wind/VB up/RP
+	./.  } => ./. 
+
+18 - removed strays:
+	{ intrude/VBP ./. => intrude/VBP ./. 
+	Still/RB  } => Still/RB 
+
+19 - split/reordered: ''./NN => ./. ''/''
+	(plus some whitespace rearrangement.  Note that last part of file
+	 is (probably table) gibberish.)
+
+23 - split: done-and/CC => done/VBN -/: and/CC
+
+25 - retokenize: ./. x 3 => .../:
+     split (misspelled): its/PRP$ => it/PRP s/VBZ
+     split/fixed quote/removed extraneous letter:
+	[ this.``/`` f/NN this.``/`` f/NN ]
+	=>
+	[ this/NN ]
+	./.
+
+	''/''
+     added missing letter: staf/NN => staff/NN
+
+31 - split (misspelled): Its/PRP$ => It/PRP s/VBZ
+
+34 - retokenize: ./. x 4 => .../: ./. (twice)
+     split (misspelled): its/PRP$ => it/PRP s/VBZ
+
+36 - removed fragmentary text, from:
+	[ Percent/NN ]
+	of/IN
+	[ respondents/NNS ]
+     to end.
+
+43 - removed xtra: [ '71/CD '71/CD ] => [ '71/CD ]
+
+46 - split: earlier-the/IN => earlier/RBR -/: the/DT
+
+47 - removed xtra: '86/CD '86/CD => '86/CD (twice)
+
+50 - split/reordered: ''./NN ]
+	=>
+	[ the/DT long/JJ view/NN ]
+	./.
+
+	''/''
+
+51 - split: a-Includes/VBZ => a/SYM -/: Includes/VBZ
+	b-Includes/VBZ => b/SYM -/: Includes/VBZ
+
+59 - retokenize: ./. x 3 => .../: (twice)
+
+82 - retokenize: ./. x 3 => .../: (twice)
+
+85 - retokenize: ./. x 4 => .../: ./.
+
+92 - removed xtra/split/fixed quote,tag:
+	[ 'We/NNP 'We/NNP ]
+	=>
+	`/``
+	[ We/PRP ]
+
+------------------------------17--------------------------------
+
+43 - split: days./NNS
+	=>
+	[ 30/CD days/NNS ]
+	./.
+
+	[ 9.87/CD %/NN ]
+
+44 - split: f-Includes/VBZ => f/SYM -/: Includes/VBZ
+     split: r-Revised/VBN => r/SYM -/: Revised/VBN
+     split: x-Year-to-date/JJ => x/SYM -/: Year-to-date/JJ
+
+78 - changed tag: out/IN => out/RB (could also be JJ, but not IN, I think)
+
+90 - split/fixed quote/corrected tags:
+	says/VBZ ,/,
+	[ 'I'm/NN ]
+	worried/VBD about/IN
+	=>
+	says/VBZ ,/, `/``
+	[ I/PRP ]
+	'm/VBP worried/JJ about/IN
+
+94 - split: FFr1/NNP => FFr/SYM 1/CD (twice)
+     (not sure of the tag.  Almost merits $, but not quite.)
+
+97 - corrected odd tag: most-contentious/RBS|JJ => most-contentious/JJS
+     REMOVED ALL TEXT AFTER "Michelman, executive director of the group."
+	-- TEXT WAS PORTION OF TABLE, SCRAMBLED IN OUR RAWTEXT (see w9_7 in
+	   	ACL/DCI version)
+
+------------------------------18--------------------------------
+
+04 - split: development.../: => development/NN .../:
+
+12 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+19 - split: YORK'S/NNP => YORK/NNP 'S/POS
+
+25 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+31 - split: heelsthe/DT => heels/NNS the/DT
+
+39 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+43 - split: 190.58point/JJ => 190.58/CD point/JJ
+
+44 - split: position.../: => position/NN .../:
+     retokenized(automatically, possibly several): ./. x 3 => .../:
+
+49 - split: West.../: => West/NN .../:
+
+69 - restored: 1\/JJ => 1\/2-year/JJ
+
+70 - restored: 1\/JJ => 1\/2-mile/JJ
+
+75 - split: ,.../: => ,/, .../:
+     retokenized(automatically, possibly several): ./. x 3 => .../:
+
+86 - joined tokens, removed extra tag:
+	[ US/PRP ]
+
+	[ $/$ /CD 2.12/CD million/CD ]
+	=>
+	[ US$/$ 2.12/CD million/CD ]
+
+------------------------------19--------------------------------
+
+13 - joined: [ U.S/NNP ] ./. => [ U.S./NNP ]
+
+18 - modernized tag: [ Machinists/NNS|NPS ] => [ Machinists/NNS|NNPS ]
+
+62 - split: [ gain./NN ]
+	=>
+	[ gain/NN ]
+	./.
+     removed fragmentary text:
+	drop/NN ,/, but/CC shrinks/VBZ
+	[ the/DT return/NN ]
+	if/IN
+	[ stock/NN prices/NNS ]
+	rise/VBP ./.
+
+
+74 - split: [ 30/CD days./NNS 9.88/CD %/NN ]
+	=>
+	[ 30/CD days/NNS ]
+	./.
+
+	[ 9.88/CD %/NN ]
+     joined/fixed slash:
+	[ 8/CD 5/CD ]
+
+	[ //NN 16/CD %/NN five/CD months/NNS ]
+	=>
+	[ 8/CD 5\/16/CD %/NN five/CD months/NNS ]
+
+86 - split: t'aint/VB => t'/PRP ai/VBZ nt/RB
+
+------------------------------20--------------------------------
+
+19 - corrected tags: dizzying/VBG => dizzying/JJ
+	up/IN and/CC down/IN => up/RB and/CC down/RB
+	OTC/NNP => OTC/NN
+
+31 - joined: [ Ariz/NNP ] ./. => [ Ariz./NNP ]
+     joined: [ Calif/NNP ] ./. => [ Calif./NNP ]
+
+33 - split: HUGO'S/NNP|POS => HUGO/NNP 'S/POS
+     joined: [ Colo/NNP ] ./. => [ Colo./NNP ]
+
+52 - joined: [ Fla/NNP ] ./. => [ Fla./NNP ]
+
+53 - split: says./VBZ => says/VBZ ./.
+     rearranged []'s
+     removed fragmentary text:
+	outlays/NNS after/IN [ November/NNP ] ====
+
+57 - corrected tags: [ all/DT ] that/IN [ much/JJ ] => all RB
+
+------------------------------21--------------------------------
+
+00 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+09 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+11 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+13 - retokenized(automatically, possibly several): ./. x 3 => .../:
+     removed fragmentary text near end:
+	together/RB
+	======================================
+
+	[ the/DT latest/JJS 12-month/JJ return/NN ]
+	./.
+
+	[ number/NN ]
+	./.
+
+24 - corrected weird tag: up/, => up/RP
+
+36 - corrected tag: 's/VBZ => 's/POS
+     retokenized(automatically, possibly several): ./. x 3 => .../:
+
+49 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+70 - corrected tag: 's/VBZ => 's/POS
+
+73 - retokenized(automatically, possibly several): ./. x 3 => .../:
+
+------------------------------22--------------------------------
+
+02 - retagged: at/IN => at/NN (in compound: "at bats")
+     retagged: but/CC => but/RB (usage means "only")
+
+05 - retagged: subdued/VBN => subdued/JJ
+
+27 - joined: [ low/JJ ] -/: => [ low-/JJ ]
+
+29 - removed junk from raw: [ >/NN ]
+
+30 - joined: a.m/NN ./. => a.m./RB
+
+31 - split: futureeither/NN => future/NN either/CC
+
+32 - corrected tag: 's/VBZ => 's/POS
+
+33 - corrected tag: 's/VBZ => 's/POS
+
+39 - split: [ Co./NNP ]
+	=>
+	[ Co/NNP ]
+	./.
+
+49 - split: [ Rose/NNP Partners/NNP L.P./NNP Mr./NNP Goldberg/NNP ]
+	=>
+	[ Rose/NNP Partners/NNP L.P/NNP ]
+	./.
+
+	[ Mr./NNP Goldberg/NNP ]
+
+55 - split: [ C./NNP American/NNP Continental/NNP 's/POS thrift/NN unit/NN ]
+	=>
+	[ C/NNP ]
+	./.
+
+	[ American/NNP Continental/NNP 's/POS thrift/NN unit/NN ]
+
+81 - split: [ the/DT U.S./NNP Mr./NNP Fromstein/NNP ]
+	=>
+	[ the/DT U.S/NNP ]
+	./.
+
+	[ Mr./NNP Fromstein/NNP ]
+
+84 - removed fragmentary text:
+	[ CO/NNP NW/NNP BCS/NNP U.LLO/NNP RBS/NNP +/SYM ]
+
+89 - removed fragment of table:
+	[ U.S/NNP ]
+	./.
+
+	.../: .../: .../: .../: .../: .../: .../: ../.
+	[ 326.5/CD 328.1/CD +/SYM ]
+
+	[ 27.5/CD ]
+	======================================
+
+93 - removed xtra: '87/CD '87/CD => '87/CD
+
+------------------------------23--------------------------------
+
+46 - removed fragmentary text:
+	[ CO/NNP PCST/NNP RBS/NNP +/NN COB/NNP AIM/NNP EBPI/NNP ]
+
+69 - split: trade-ethnic/JJ => trade/NN -/: ethnic/JJ
+
+76 - removed xtra:  '87/CD '87/CD => '87/CD
+
+80 - split: [ 30/CD days./NNS 9.91/CD  %/NN ]
+	=>
+	[ 30/CD days/NNS ]
+	./.
+
+	[ 9.91/CD  %/NN ]
+
+84 - split: be-that/VB => be/VB -/: that/IN
+
+86 - removed xtra:  '87/CD '87/CD => '87/CD
+
+97 - split: [ the/DT U.S./NNP Treasury/NNP officials/NNS ]
+	=>
+	[ the/DT U.S/NNP ]
+	./.
+
+	[ Treasury/NNP officials/NNS ]
+
+------------------------------24--------------------------------
+
+28 - split/fixed quote: [ 'What/WP ]
+	=>
+	`/``
+	[ What/WP ]
+
+31 - corrected tags: in/IN or/CC out/IN => in/RB or/CC out/RB
+
+51 - removed fragmentary text at end, from:
+	into/IN whether/IN
+	[ networks/NNS ]
+     to:
+	[ progress/NN ]
+	is/VBZ made/VBN ./.
+
+72 - removed fragmentary text:
+	[ growth/NN ]
+	of/IN
+	[ catalog/NN companies/NNS ]
+
+	[ that/WDT ]
+	have/VBP stolen/VBN
+	[ sales/NNS ]
+	from/IN
+	[ retail/JJ stores/NNS ]
+	for/IN
+	[ much/JJ ]
+	of/IN
+	[ this/DT decade/NN ]
+	./.
+
+
+-------------------------general changes------------------------
+
+LOST FINAL TOKEN RESTORATION
+
+In the following 128 files, the final token was usually missing, due to a
+bug in the Part-Of-Speech tagger.  These tokens were restored on 9/6/94
+using the following process:
+
+ Found missing tokens by searching rawtext with following script:
+   #!/bin/sh
+   cd /mnt/unagi/nldb/rawtexts/dj.parts
+   for file in [01]?00/dj1.???? 2[0-4]00/dj1.????
+   do
+     if
+       tail -2 $file | egrep . | grep -v '[.?][ "]*$'
+     then
+       echo $file
+     fi
+   done
+ Output of this script was collected in lost-token-list.  One token that
+ was over 1024 characters long, and thus fooled grep, was removed (2181).
+
+ Then the mostly-relevant tokens were extracted, using:
+  % awk '{ if ($0 ~ /^[0-9]+\/dj1\./) { print ".file-" $0 } \
+	  else { print $NF } }' lost-token-list > lost-pos-tokens
+
+ This file was put through our part of speech tagger, hand-corrected, and
+ slightly reformatted to have the missing token on the line immediately
+ before the filename - producing the file lost-pos-tokens.pos.
+
+ Finally, the lost tokens were restored to the files automatically, using:
+
+  % perl -ne 'if (/^\.file-[0-9]+\\\/dj1\.([0-9]+)/) { print "wsj_$1.pos: "; \
+	 print "$prevline"; } $prevline = $_;' lost-pos-tokens.pos \
+	 > lost-pos-tokens.neat
+
+  % perl -ne 'if (/^(wsj_([0-9][0-9])[0-9][0-9]\.pos):  (.+)$/) { open \
+	 (POSFILE,">>new/pos/wsj/$2/$1") || die "cannot open POSFILE $1" ; \
+	 print "doing $1\n" ; \
+	 print POSFILE "\n$3\n======================================\n\n" ; \
+	 close POSFILE }' lost-pos-tokens.neat
+
+ (original commands were continuous lines - backslashing was added for
+ legibility - no guarantees that the backslashed forms would work)
+
+ The results of this process were checked by hand, and corrected in three
+ cases (1125,1996,2367 - in which the final token was already there
+ somehow).
+
+The affected files are:
+
+     00/wsj_0094.pos 01/wsj_0104.pos 01/wsj_0133.pos 01/wsj_0148.pos
+     01/wsj_0190.pos 02/wsj_0200.pos 02/wsj_0211.pos 02/wsj_0248.pos
+     02/wsj_0266.pos 02/wsj_0268.pos 02/wsj_0269.pos 03/wsj_0331.pos
+     03/wsj_0364.pos 03/wsj_0396.pos 04/wsj_0410.pos 04/wsj_0434.pos
+     04/wsj_0449.pos 04/wsj_0452.pos 04/wsj_0455.pos 05/wsj_0511.pos
+     05/wsj_0581.pos 05/wsj_0586.pos 06/wsj_0603.pos 06/wsj_0605.pos
+     06/wsj_0608.pos 06/wsj_0609.pos 06/wsj_0611.pos 06/wsj_0614.pos
+     06/wsj_0694.pos 06/wsj_0696.pos 07/wsj_0728.pos 07/wsj_0735.pos
+     07/wsj_0747.pos 07/wsj_0751.pos 08/wsj_0818.pos 08/wsj_0831.pos
+     08/wsj_0860.pos 08/wsj_0887.pos 08/wsj_0892.pos 08/wsj_0897.pos
+     09/wsj_0911.pos 09/wsj_0957.pos 09/wsj_0974.pos 09/wsj_0980.pos
+     09/wsj_0992.pos 10/wsj_1056.pos 10/wsj_1070.pos 10/wsj_1095.pos
+     11/wsj_1107.pos 11/wsj_1125.pos 12/wsj_1228.pos 12/wsj_1253.pos
+     12/wsj_1256.pos 12/wsj_1259.pos 12/wsj_1260.pos 13/wsj_1337.pos
+     13/wsj_1377.pos 13/wsj_1382.pos 14/wsj_1401.pos 14/wsj_1402.pos
+     14/wsj_1417.pos 14/wsj_1430.pos 14/wsj_1436.pos 14/wsj_1450.pos
+     14/wsj_1490.pos 14/wsj_1497.pos 15/wsj_1529.pos 15/wsj_1557.pos
+     15/wsj_1558.pos 15/wsj_1564.pos 15/wsj_1585.pos 15/wsj_1588.pos
+     16/wsj_1602.pos 16/wsj_1605.pos 16/wsj_1616.pos 16/wsj_1619.pos
+     16/wsj_1623.pos 16/wsj_1625.pos 16/wsj_1632.pos 16/wsj_1636.pos
+     16/wsj_1658.pos 17/wsj_1735.pos 17/wsj_1745.pos 17/wsj_1747.pos
+     17/wsj_1751.pos 18/wsj_1814.pos 18/wsj_1856.pos 18/wsj_1862.pos
+     18/wsj_1871.pos 19/wsj_1941.pos 19/wsj_1961.pos 19/wsj_1964.pos
+     19/wsj_1965.pos 19/wsj_1970.pos 19/wsj_1996.pos 20/wsj_2011.pos
+     20/wsj_2017.pos 20/wsj_2021.pos 20/wsj_2053.pos 21/wsj_2108.pos
+     21/wsj_2114.pos 21/wsj_2139.pos 21/wsj_2153.pos 21/wsj_2175.pos
+     21/wsj_2183.pos 21/wsj_2187.pos 21/wsj_2198.pos 22/wsj_2206.pos
+     22/wsj_2227.pos 22/wsj_2230.pos 22/wsj_2289.pos 22/wsj_2297.pos
+     23/wsj_2300.pos 23/wsj_2301.pos 23/wsj_2311.pos 23/wsj_2351.pos
+     23/wsj_2352.pos 23/wsj_2367.pos 23/wsj_2368.pos 23/wsj_2374.pos
+     23/wsj_2376.pos 24/wsj_2407.pos 24/wsj_2412.pos 24/wsj_2413.pos
+     24/wsj_2415.pos 24/wsj_2458.pos 24/wsj_2468.pos 24/wsj_2472.pos
+
+Note that because of a bug in our parser preprocessing, the corresponding
+parsed files are each missing (approximately) the last _sentence_ of the
+story.  More precisely, any words that appeared after the last final
+punctuation (or line of ==='s) in the 0.5 release POS file do not appear in
+the corresponding skeletally parsed and combined versions of that file.
+
+In some cases, the restored text has been removed again, from the rawtext
+as well, if it was part of fragmentary text.
+
+
+LOST FINAL QUOTE RESTORATION
+
+In the following 224 files, the final double-quote token didn't make it
+through the Part-Of-Speech tagger (same bug as above).  These tokens were
+restored on 9/9/94 using the following process:
+
+ Found missing tokens by searching rawtext with following script:
+   #!/bin/sh
+   cd /mnt/unagi/nldb/rawtexts/dj.parts
+   for file in [01]?00/dj1.???? 2[0-4]00/dj1.????
+   do
+     if
+       tail -2 $file | egrep . | grep '[.?]" *$'
+     then
+       echo $file
+     fi
+   done
+ Output of this script was collected in lost-quote-list.  Two quotes had
+ already been restored, so their lines were removed.
+
+ The missing quotes were restored automatically with the following:
+
+  % foreach file (`grep dj1 lost-quote-list | \
+	sed 's#^\(..\)../dj1\.\(....\).*$#\1/wsj_\2.pos#'`)
+  foreach? /usr/5bin/echo "\n''/''\n======================================" \
+	>> $file
+
+ (original commands were continuous lines - backslashing was added for
+ legibility - no guarantees that the backslashed forms would work)
+
+ The results of this process were checked by hand, and no errors were found.
+
+Note that most corresponding parsed files currently lack the final quote.
+
+The affected files are:
+
+     00/wsj_0034.pos 00/wsj_0041.pos 00/wsj_0044.pos 00/wsj_0051.pos
+     00/wsj_0060.pos 00/wsj_0072.pos 00/wsj_0089.pos 00/wsj_0090.pos
+     00/wsj_0098.pos 01/wsj_0100.pos 01/wsj_0102.pos 01/wsj_0109.pos
+     01/wsj_0114.pos 01/wsj_0121.pos 01/wsj_0128.pos 01/wsj_0160.pos
+     01/wsj_0181.pos 02/wsj_0205.pos 02/wsj_0214.pos 02/wsj_0222.pos
+     02/wsj_0242.pos 02/wsj_0259.pos 02/wsj_0261.pos 02/wsj_0267.pos
+     02/wsj_0282.pos 02/wsj_0286.pos 02/wsj_0287.pos 03/wsj_0304.pos
+     03/wsj_0305.pos 03/wsj_0320.pos 03/wsj_0326.pos 03/wsj_0367.pos
+     03/wsj_0393.pos 04/wsj_0408.pos 04/wsj_0430.pos 04/wsj_0441.pos
+     04/wsj_0445.pos 04/wsj_0465.pos 04/wsj_0473.pos 04/wsj_0495.pos
+     05/wsj_0518.pos 05/wsj_0525.pos 05/wsj_0530.pos 05/wsj_0559.pos
+     05/wsj_0560.pos 05/wsj_0563.pos 05/wsj_0564.pos 05/wsj_0578.pos
+     05/wsj_0584.pos 05/wsj_0592.pos 05/wsj_0597.pos 06/wsj_0601.pos
+     06/wsj_0604.pos 06/wsj_0617.pos 06/wsj_0633.pos 06/wsj_0635.pos
+     06/wsj_0654.pos 06/wsj_0666.pos 06/wsj_0673.pos 07/wsj_0723.pos
+     07/wsj_0725.pos 07/wsj_0741.pos 07/wsj_0742.pos 07/wsj_0743.pos
+     07/wsj_0748.pos 07/wsj_0758.pos 07/wsj_0765.pos 07/wsj_0768.pos
+     07/wsj_0776.pos 07/wsj_0799.pos 08/wsj_0800.pos 08/wsj_0808.pos
+     08/wsj_0826.pos 08/wsj_0832.pos 08/wsj_0838.pos 08/wsj_0840.pos
+     08/wsj_0842.pos 08/wsj_0843.pos 08/wsj_0846.pos 08/wsj_0858.pos
+     08/wsj_0886.pos 09/wsj_0903.pos 09/wsj_0909.pos 09/wsj_0922.pos
+     09/wsj_0931.pos 09/wsj_0935.pos 09/wsj_0943.pos 09/wsj_0949.pos
+     09/wsj_0956.pos 09/wsj_0962.pos 09/wsj_0971.pos 09/wsj_0975.pos
+     09/wsj_0976.pos 09/wsj_0983.pos 09/wsj_0984.pos 09/wsj_0994.pos
+     09/wsj_0998.pos 10/wsj_1000.pos 10/wsj_1010.pos 10/wsj_1025.pos
+     10/wsj_1057.pos 10/wsj_1058.pos 10/wsj_1094.pos 11/wsj_1110.pos
+     11/wsj_1123.pos 11/wsj_1136.pos 11/wsj_1150.pos 11/wsj_1159.pos
+     11/wsj_1178.pos 11/wsj_1179.pos 12/wsj_1234.pos 12/wsj_1246.pos
+     12/wsj_1248.pos 12/wsj_1261.pos 12/wsj_1264.pos 12/wsj_1265.pos
+     12/wsj_1273.pos 12/wsj_1274.pos 12/wsj_1275.pos 13/wsj_1306.pos
+     13/wsj_1316.pos 13/wsj_1366.pos 13/wsj_1367.pos 13/wsj_1368.pos
+     13/wsj_1374.pos 13/wsj_1375.pos 13/wsj_1376.pos 13/wsj_1379.pos
+     13/wsj_1396.pos 14/wsj_1432.pos 14/wsj_1455.pos 14/wsj_1457.pos
+     14/wsj_1471.pos 14/wsj_1474.pos 14/wsj_1475.pos 15/wsj_1515.pos
+     15/wsj_1549.pos 15/wsj_1556.pos 15/wsj_1560.pos 15/wsj_1563.pos
+     15/wsj_1582.pos 15/wsj_1586.pos 15/wsj_1587.pos 15/wsj_1594.pos
+     16/wsj_1603.pos 16/wsj_1611.pos 16/wsj_1615.pos 16/wsj_1617.pos
+     16/wsj_1629.pos 16/wsj_1634.pos 16/wsj_1647.pos 16/wsj_1650.pos
+     16/wsj_1654.pos 16/wsj_1675.pos 16/wsj_1677.pos 16/wsj_1682.pos
+     16/wsj_1686.pos 16/wsj_1691.pos 16/wsj_1693.pos 17/wsj_1727.pos
+     17/wsj_1791.pos 18/wsj_1802.pos 18/wsj_1822.pos 18/wsj_1826.pos
+     18/wsj_1844.pos 18/wsj_1852.pos 18/wsj_1860.pos 18/wsj_1870.pos
+     18/wsj_1875.pos 19/wsj_1900.pos 19/wsj_1901.pos 19/wsj_1903.pos
+     19/wsj_1918.pos 19/wsj_1922.pos 19/wsj_1928.pos 19/wsj_1946.pos
+     20/wsj_2010.pos 20/wsj_2012.pos 20/wsj_2013.pos 20/wsj_2044.pos
+     20/wsj_2048.pos 20/wsj_2055.pos 20/wsj_2063.pos 21/wsj_2100.pos
+     21/wsj_2110.pos 21/wsj_2125.pos 21/wsj_2156.pos 21/wsj_2161.pos
+     21/wsj_2165.pos 21/wsj_2169.pos 21/wsj_2179.pos 21/wsj_2190.pos
+     21/wsj_2191.pos 22/wsj_2202.pos 22/wsj_2213.pos 22/wsj_2221.pos
+     22/wsj_2223.pos 22/wsj_2224.pos 22/wsj_2235.pos 22/wsj_2250.pos
+     22/wsj_2269.pos 22/wsj_2276.pos 23/wsj_2303.pos 23/wsj_2306.pos
+     23/wsj_2314.pos 23/wsj_2321.pos 23/wsj_2347.pos 23/wsj_2354.pos
+     23/wsj_2357.pos 23/wsj_2359.pos 23/wsj_2370.pos 23/wsj_2375.pos
+     23/wsj_2381.pos 23/wsj_2384.pos 23/wsj_2386.pos 23/wsj_2393.pos
+     23/wsj_2397.pos 24/wsj_2406.pos 24/wsj_2417.pos 24/wsj_2446.pos
+     24/wsj_2454.pos 24/wsj_2482.pos 24/wsj_2491.pos 24/wsj_2492.pos
+
+
+MISSING EXCLAMATION POINTS
+
+Exclamation points, which were initially ] in the raw files, came out in
+many of these files as /) (or less often, ]/)).  The missing !'s were
+restored in a semi-automated fashion, to the following files.
+
+     00/wsj_0071.pos 00/wsj_0087.pos 00/wsj_0087.pos 01/wsj_0118.pos
+     01/wsj_0118.pos 01/wsj_0139.pos 02/wsj_0239.pos 02/wsj_0239.pos
+     03/wsj_0385.pos 04/wsj_0414.pos 04/wsj_0447.pos 05/wsj_0508.pos
+     05/wsj_0594.pos 05/wsj_0596.pos 06/wsj_0681.pos 07/wsj_0758.pos
+     07/wsj_0790.pos 07/wsj_0790.pos 08/wsj_0847.pos 09/wsj_0966.pos
+     09/wsj_0976.pos 09/wsj_0984.pos 10/wsj_1070.pos 11/wsj_1120.pos
+     11/wsj_1146.pos 11/wsj_1146.pos 11/wsj_1154.pos 11/wsj_1193.pos
+     12/wsj_1208.pos 12/wsj_1212.pos 12/wsj_1252.pos 12/wsj_1252.pos
+     13/wsj_1313.pos 13/wsj_1323.pos 13/wsj_1388.pos 13/wsj_1398.pos
+     14/wsj_1424.pos 14/wsj_1455.pos 15/wsj_1566.pos 15/wsj_1566.pos
+     15/wsj_1566.pos 15/wsj_1566.pos 15/wsj_1566.pos 16/wsj_1618.pos
+     16/wsj_1618.pos 16/wsj_1625.pos 17/wsj_1778.pos 17/wsj_1778.pos
+     17/wsj_1778.pos 17/wsj_1778.pos 17/wsj_1778.pos 17/wsj_1778.pos
+     19/wsj_1988.pos 20/wsj_2038.pos 21/wsj_2177.pos 21/wsj_2188.pos
+     22/wsj_2205.pos 22/wsj_2284.pos 23/wsj_2386.pos 24/wsj_2402.pos
+
+DOUBLE TAGS
+
+Changed double tag /NNP/CD to /CD in the following files:
+     05/wsj_0533.pos 07/wsj_0712.pos 07/wsj_0712.pos 07/wsj_0712.pos
+     07/wsj_0712.pos 08/wsj_0896.pos 09/wsj_0938.pos 13/wsj_1372.pos
+     13/wsj_1372.pos 13/wsj_1372.pos 13/wsj_1372.pos 13/wsj_1372.pos
+     19/wsj_1938.pos
